@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_height="match_parent" android:layout_width="match_parent"
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_height="match_parent" android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".DoiMatKhau">
@@ -9,7 +10,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_gravity="center"
-    android:layout_marginTop="100dp">
+    android:layout_marginTop="150dp">
         <TextView
             android:id="@+id/textView1"
             android:layout_width="match_parent"
@@ -68,6 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_width="220dp"
         android:backgroundTint="#00acc1"
-        style="@style/Widget.AppCompat.Button.Colored" />
+        style="@style/Widget.AppCompat.Button.Colored"
+        />
 
 </LinearLayout>
