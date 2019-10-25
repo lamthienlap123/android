@@ -60,12 +60,14 @@
 
     </LinearLayout>
     <Button
-        android:id="@+id/button2"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:textColor="#FFFFFF"
-        android:background="#003DFF"
+        android:orientation="horizontal"
+        android:id="@+id/btn_login"
+        android:text="XÁC NHẬN"
         android:layout_height="wrap_content"
-        android:text="Xác nhận" />
+        android:layout_width="220dp"
+        android:backgroundTint="#00acc1"
+        style="@style/Widget.AppCompat.Button.Colored" />
 
 </LinearLayout>
