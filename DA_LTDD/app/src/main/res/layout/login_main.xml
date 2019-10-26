@@ -16,6 +16,7 @@
         android:layout_gravity="center"
         android:layout_width="150dp"
         android:layout_height="150dp"/>
+
     <TextView
         android:gravity="center"
         android:textSize="30dp"
@@ -46,7 +47,6 @@
         <Button
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
-            android:orientation="horizontal"
             android:id="@+id/btn_login"
             android:text="ĐĂNG NHẬP"
             android:layout_height="wrap_content"
