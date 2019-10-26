@@ -16,7 +16,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:layout_width="350px"
+            android:layout_width="300px"
             android:layout_height="match_parent"
             android:layout_marginRight="20px"
             android:background="#F7FAF7"
@@ -25,7 +25,7 @@
             android:text="Kết quả học tập"></Button>
 
         <Button
-            android:layout_width="350px"
+            android:layout_width="300px"
             android:layout_height="match_parent"
             android:layout_marginRight="20px"
             android:background="#F7FAF7"
@@ -34,7 +34,7 @@
             android:text="Thông báo"></Button>
 
         <Button
-            android:layout_width="350px"
+            android:layout_width="300px"
             android:layout_height="match_parent"
             android:layout_marginRight="20px"
             android:background="#F7FAF7"
@@ -54,7 +54,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:layout_width="350px"
+            android:layout_width="300px"
             android:layout_height="match_parent"
             android:layout_marginRight="20px"
             android:background="#F7FAF7"
@@ -63,7 +63,7 @@
             android:text="Kết quả học tập"></Button>
 
         <Button
-            android:layout_width="350px"
+            android:layout_width="300px"
             android:layout_height="match_parent"
             android:layout_marginRight="20px"
             android:background="#F7FAF7"
@@ -72,7 +72,7 @@
             android:text="Thông báo"></Button>
 
         <Button
-            android:layout_width="350px"
+            android:layout_width="300px"
             android:layout_height="match_parent"
             android:layout_marginRight="20px"
             android:background="#F7FAF7"
@@ -93,7 +93,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:layout_width="280px"
+            android:layout_width="300px"
             android:paddingTop="20dp"
             android:layout_height="match_parent"
             android:layout_marginRight="20px"
@@ -102,7 +102,7 @@
             android:text="Kết quả học tập"></Button>
 
         <Button
-            android:layout_width="280px"
+            android:layout_width="300px"
             android:layout_height="match_parent"
             android:layout_marginRight="20px"
             android:background="#F7FAF7"
@@ -112,17 +112,12 @@
 
         <Button
             android:paddingTop="20dp"
-            android:layout_width="280px"
+            android:layout_width="300px"
             android:layout_height="match_parent"
             android:layout_marginRight="20px"
             android:background="#F7FAF7"
             android:drawableTop="@drawable/diploma"
             android:text="Thông tin SV"></Button>
     </LinearLayout>
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="acc"
-    style="@style/Widget.AppCompat.Button.Colored"></Button>
 
 </RelativeLayout>
