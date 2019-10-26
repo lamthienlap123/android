@@ -5,124 +5,87 @@
     android:orientation="vertical"
     >
 
-    <LinearLayout
-        android:layout_width="1400px"
-        android:layout_height="100dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="20px"
-        android:layout_marginTop="64dp"
-        android:layout_marginRight="20px"
-        android:gravity="center"
-        android:orientation="horizontal">
 
-        <Button
-            android:layout_width="350px"
-            android:layout_height="match_parent"
-            android:layout_marginRight="20px"
-            android:background="#F7FAF7"
-            android:drawableTop="@drawable/atom"
-            android:paddingTop="20dp"
-            android:text="Kết quả học tập"></Button>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:gravity="center">
+        <TableRow>
 
-        <Button
-            android:layout_width="350px"
-            android:layout_height="match_parent"
-            android:layout_marginRight="20px"
-            android:background="#F7FAF7"
-            android:drawableTop="@drawable/bell"
-            android:paddingTop="20dp"
-            android:text="Thông báo"></Button>
+            <Button
+                android:layout_width="360px"
+                android:layout_height="300px"
+                android:background="#F7FAF7"
+                android:drawableTop="@drawable/bell"
+                android:paddingTop="20dp"
+                android:text="Thông báo"></Button>
+            <Button
+                android:layout_width="360px"
+                android:layout_height="300px"
+                android:background="#F7FAF7"
+                android:drawableTop="@drawable/bell"
+                android:paddingTop="20dp"
+                android:text="Thông báo"></Button>
+            <Button
+                android:layout_width="360px"
+                android:layout_height="300px"
+                android:background="#F7FAF7"
+                android:drawableTop="@drawable/compass"
+                android:paddingTop="20dp"
+                android:text="báo cáo"></Button>
+        </TableRow>
+        <TableRow>
 
-        <Button
-            android:layout_width="350px"
-            android:layout_height="match_parent"
-            android:layout_marginRight="20px"
-            android:background="#F7FAF7"
-            android:drawableTop="@drawable/compass"
-            android:paddingTop="20dp"
-            android:text="báo cáo"></Button>
-    </LinearLayout>
+            <Button
+                android:layout_width="360px"
+                android:layout_height="300px"
+                android:background="#F7FAF7"
+                android:drawableTop="@drawable/atom"
+                android:paddingTop="20dp"
+                android:text="Kết quả học tập"></Button>
 
-    <LinearLayout
-        android:layout_width="1400px"
-        android:layout_height="100dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="20px"
-        android:layout_marginTop="186dp"
-        android:layout_marginRight="20px"
-        android:gravity="center"
-        android:orientation="horizontal">
+            <Button
+                android:layout_width="360px"
+                android:layout_height="300px"
+                android:background="#F7FAF7"
+                android:drawableTop="@drawable/pen"
+                android:paddingTop="20dp"
+                android:text="Thông báo"></Button>
 
-        <Button
-            android:layout_width="350px"
-            android:layout_height="match_parent"
-            android:layout_marginRight="20px"
-            android:background="#F7FAF7"
-            android:drawableTop="@drawable/atom"
-            android:paddingTop="20dp"
-            android:text="Kết quả học tập"></Button>
+            <Button
+                android:layout_width="360px"
+                android:layout_height="300px"
+                android:background="#F7FAF7"
+                android:drawableTop="@drawable/feather"
+                android:paddingTop="35dp"
+                android:text="Thông tin sinh viên"></Button>
+        </TableRow>
+        <TableRow>
 
-        <Button
-            android:layout_width="350px"
-            android:layout_height="match_parent"
-            android:layout_marginRight="20px"
-            android:background="#F7FAF7"
-            android:drawableTop="@drawable/pen"
-            android:paddingTop="20dp"
-            android:text="Thông báo"></Button>
+            <Button
+                android:layout_width="360px"
+                android:layout_height="300px"
+                android:background="#F7FAF7"
+                android:drawableTop="@drawable/atom"
+                android:paddingTop="20dp"
+                android:text="Kết quả học tập"></Button>
 
-        <Button
-            android:layout_width="350px"
-            android:layout_height="match_parent"
-            android:layout_marginRight="20px"
-            android:background="#F7FAF7"
-            android:text="Thông tin sinh viên"
-            android:paddingTop="20dp"
-            android:drawableTop="@drawable/feather"
-            ></Button>
-    </LinearLayout>
+            <Button
+                android:layout_width="360px"
+                android:layout_height="300px"
+                android:background="#F7FAF7"
+                android:drawableTop="@drawable/pen"
+                android:paddingTop="20dp"
+                android:text="Thông báo"></Button>
 
-    <LinearLayout
-        android:layout_width="1400px"
-        android:layout_height="100dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="20px"
-        android:layout_marginTop="308dp"
-        android:layout_marginRight="20px"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <Button
-            android:layout_width="280px"
-            android:paddingTop="20dp"
-            android:layout_height="match_parent"
-            android:layout_marginRight="20px"
-            android:background="#F7FAF7"
-            android:drawableTop="@drawable/backpack"
-            android:text="Kết quả học tập"></Button>
-
-        <Button
-            android:layout_width="280px"
-            android:layout_height="match_parent"
-            android:layout_marginRight="20px"
-            android:background="#F7FAF7"
-            android:drawableTop="@drawable/scope"
-            android:paddingTop="20dp"
-            android:text="Thông báo"></Button>
-
-        <Button
-            android:paddingTop="20dp"
-            android:layout_width="280px"
-            android:layout_height="match_parent"
-            android:layout_marginRight="20px"
-            android:background="#F7FAF7"
-            android:drawableTop="@drawable/diploma"
-            android:text="Thông tin SV"></Button>
-    </LinearLayout>
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="acc"
-    style="@style/Widget.AppCompat.Button.Colored"></Button>
-
+            <Button
+                android:layout_width="360px"
+                android:layout_height="300px"
+                android:background="#F7FAF7"
+                android:drawableTop="@drawable/feather"
+                android:paddingTop="35dp"
+                android:text="Thông tin sinh viên"></Button>
+        </TableRow>
+    </TableLayout>
 </RelativeLayout>
