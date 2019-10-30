@@ -7,7 +7,8 @@ import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+
+public class MainActivity_Login extends AppCompatActivity {
 
     EditText edtuser,edtpassword;
     Button btn_login;

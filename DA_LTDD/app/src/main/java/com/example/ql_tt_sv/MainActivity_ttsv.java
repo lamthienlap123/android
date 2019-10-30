@@ -30,7 +30,7 @@ public class MainActivity_ttsv extends AppCompatActivity {
     }
 
     private void imageandname() {
-        imageuser = (ImageView)findViewById(R.id.icon_ttsv);
+        imageuser = (ImageView)findViewById(R.id.icon_sv);
         name = (TextView)findViewById(R.id.nameuser);
     }
 
