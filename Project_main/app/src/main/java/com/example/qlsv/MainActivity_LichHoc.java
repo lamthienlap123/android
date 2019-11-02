@@ -17,7 +17,7 @@ public class MainActivity_LichHoc extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main__lich_hoc);
+        setContentView(R.layout.lich_hoc);
         txtdate = (TextView) findViewById(R.id.textdate);
         SetDate();
         txtdate.setOnClickListener(new View.OnClickListener() {
