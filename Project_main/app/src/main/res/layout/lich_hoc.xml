@@ -20,18 +20,12 @@
         <TextView
             android:textColor="@android:color/white"
             android:textSize="20dp"
+            android:layout_gravity="center"
             android:gravity="center"
             android:layout_marginRight="50dp"
-            android:text="Đổi mật khẩu"
+            android:text="Lịch học"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="?attr/homeAsUpIndicator" />
+            android:layout_height="wrap_content"/>
     </LinearLayout>
     <TableRow
         android:layout_width="wrap_content"
