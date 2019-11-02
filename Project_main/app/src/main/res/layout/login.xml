@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background2"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity_Login">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/icon_hufi"
+        android:src="@drawable/hufi_icon"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+    <TextView
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:text="ĐĂNG NHẬP"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight ="40dp"
+        android:layout_marginLeft="40dp">
+        <EditText
+            android:hint="Nhập tên người dùng"
+            android:id="@+id/edittextuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edittextpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Nhập mật khẩu" />
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/btn_login"
+        android:text="ĐĂNG NHẬP"
+        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:backgroundTint="#00acc1"
+        style="@style/Widget.AppCompat.Button.Colored" />
+</LinearLayout>
