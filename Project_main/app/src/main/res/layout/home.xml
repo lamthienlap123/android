@@ -67,23 +67,26 @@
                 android:layout_width="360px"
                 android:layout_height="300px"
                 android:background="#F7FAF7"
-                android:drawableTop="@drawable/bell"
+                android:drawableTop="@drawable/idcard"
                 android:paddingTop="20dp"
-                android:text="Thông báo"></Button>
+                android:text="Thông tin sinh viên"
+                android:textSize="12sp"></Button>
             <Button
                 android:layout_width="360px"
                 android:layout_height="300px"
                 android:background="#F7FAF7"
                 android:drawableTop="@drawable/bell"
                 android:paddingTop="20dp"
-                android:text="Thông báo"></Button>
+                android:text="Thông báo"
+                android:textSize="12sp"></Button>
             <Button
                 android:layout_width="360px"
                 android:layout_height="300px"
                 android:background="#F7FAF7"
-                android:drawableTop="@drawable/compass"
+                android:drawableTop="@drawable/calendar"
                 android:paddingTop="20dp"
-                android:text="báo cáo"></Button>
+                android:text="lịch học"
+                android:textSize="12sp"></Button>
         </TableRow>
         <TableRow
             android:layout_marginTop="5dp"
@@ -94,25 +97,28 @@
                 android:layout_width="360px"
                 android:layout_height="300px"
                 android:background="#F7FAF7"
-                android:drawableTop="@drawable/atom"
+                android:drawableTop="@drawable/analytics"
                 android:paddingTop="20dp"
-                android:text="Kết quả học tập"></Button>
+                android:text="Kết quả học tập"
+                android:textSize="12sp"></Button>
 
             <Button
                 android:layout_width="360px"
                 android:layout_height="300px"
                 android:background="#F7FAF7"
-                android:drawableTop="@drawable/pen"
+                android:drawableTop="@drawable/table"
                 android:paddingTop="20dp"
-                android:text="Thông báo"></Button>
+                android:text="chương trình khung"
+                android:textSize="12sp"></Button>
 
             <Button
                 android:layout_width="360px"
                 android:layout_height="300px"
                 android:background="#F7FAF7"
-                android:drawableTop="@drawable/feather"
+                android:drawableTop="@drawable/padlock"
                 android:paddingTop="20dp"
-                android:text="Thông tin "></Button>
+                android:text="Thông tin"
+                android:textSize="12sp"></Button>
         </TableRow>
         <TableRow
             android:layout_marginTop="5dp"
@@ -123,25 +129,21 @@
                 android:layout_width="360px"
                 android:layout_height="300px"
                 android:background="#F7FAF7"
-                android:drawableTop="@drawable/atom"
+                android:drawableTop="@drawable/exit"
                 android:paddingTop="20dp"
-                android:text="Kết quả học tập"></Button>
+                android:text="Đăng xuất"
+                android:textSize="12sp"></Button>
 
             <Button
                 android:layout_width="360px"
                 android:layout_height="300px"
                 android:background="#F7FAF7"
-                android:drawableTop="@drawable/pen"
+                android:drawableTop="@drawable/letter"
                 android:paddingTop="20dp"
-                android:text="Thông báo"></Button>
+                android:text="góp ý - phản hồi"
+                android:textSize="12sp"></Button>
 
-            <Button
-                android:layout_width="360px"
-                android:layout_height="300px"
-                android:background="#F7FAF7"
-                android:drawableTop="@drawable/feather"
-                android:paddingTop="20dp"
-                android:text="Thông tin"></Button>
+
         </TableRow>
     </TableLayout>
 </LinearLayout>
