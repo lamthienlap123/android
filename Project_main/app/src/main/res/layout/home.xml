@@ -64,6 +64,7 @@
             android:layout_height="300px">
 
             <Button
+                android:id="@+id/btn_TTSV"
                 android:layout_width="360px"
                 android:layout_height="300px"
                 android:background="#F7FAF7"
@@ -72,6 +73,7 @@
                 android:text="Thông tin sinh viên"
                 android:textSize="12sp"></Button>
             <Button
+                android:id="@+id/btn_TB"
                 android:layout_width="360px"
                 android:layout_height="300px"
                 android:background="#F7FAF7"
@@ -80,6 +82,7 @@
                 android:text="Thông báo"
                 android:textSize="12sp"></Button>
             <Button
+                android:id="@+id/btn_LH"
                 android:layout_width="360px"
                 android:layout_height="300px"
                 android:background="#F7FAF7"
@@ -94,6 +97,7 @@
             android:layout_height="300px">
 
             <Button
+                android:id="@+id/btn_KQHT"
                 android:layout_width="360px"
                 android:layout_height="300px"
                 android:background="#F7FAF7"
@@ -103,6 +107,7 @@
                 android:textSize="12sp"></Button>
 
             <Button
+                android:id="@+id/btn_CTK"
                 android:layout_width="360px"
                 android:layout_height="300px"
                 android:background="#F7FAF7"
@@ -112,6 +117,7 @@
                 android:textSize="12sp"></Button>
 
             <Button
+                android:id="@+id/btn_DMK"
                 android:layout_width="360px"
                 android:layout_height="300px"
                 android:background="#F7FAF7"
@@ -126,6 +132,7 @@
             android:layout_height="300px">
 
             <Button
+                android:id="@+id/btn_DX"
                 android:layout_width="360px"
                 android:layout_height="300px"
                 android:background="#F7FAF7"
@@ -135,6 +142,7 @@
                 android:textSize="12sp"></Button>
 
             <Button
+                android:id="@+id/btn_DG"
                 android:layout_width="360px"
                 android:layout_height="300px"
                 android:background="#F7FAF7"
