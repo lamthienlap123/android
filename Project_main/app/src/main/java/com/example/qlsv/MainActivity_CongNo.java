@@ -1,47 +1,69 @@
 package com.example.qlsv;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 
 public class MainActivity_CongNo extends AppCompatActivity {
 
-    ArrayList<List_congno> listview;
+    Connect cn = new Connect();
+    String urlgetdata = cn.pChuoiCN();
+    ArrayList<List_congno> listviewcn;
     CongNo_listviewAdapter congno_listviewAdapter;
     ListView listViewCN;
+    ImageButton btncn;
+    TextView txtcongno;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.congno_main);
+        txtcongno = findViewById(R.id.tongcongno);
         showlstview();
+        action();
     }
+    private void action() {
+        Intent intent = getIntent();
+        final String mssv = intent.getStringExtra("mssv");
+        final String pass = intent.getStringExtra("pass");
+        btncn = findViewById(R.id.btn_cn_home);
+        btncn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity_CongNo.this, MainActivity_Home.class);
+                intent.putExtra("mssv", mssv);
+                intent.putExtra("pass",pass);
+                startActivity(intent);
+            }
+        });
+    }
+
     private void showlstview() {
 
-        listview = new ArrayList<>();
-        listview.add(new List_congno(1,"Công nghệ phần mềm",1335000,1335000,0));
-        listview.add(new List_congno(2,"Truyền thông kỹ thuật số",1335000,0,1335000));
-        listview.add(new List_congno(3,"Lập trình mã nguồn mở",1335000,1335000,0));
-        listview.add(new List_congno(4,"Thực hành lập trình mã nguồn mở",890000,890000,0));
-        listview.add(new List_congno(5,"Lập trình window nâng cao",1335000,1335000,0));
-        listview.add(new List_congno(6,"Thực hành công nghệ web",575000,575000,0));
-        listview.add(new List_congno(7,"Toán kỹ thuật",890000,890000,0));
-        listview.add(new List_congno(8,"Lập trình trên thiết bị di động",1335000,1335000,0));
-        listview.add(new List_congno(9,"Mạng máy tính",890000,890000,0));
-        listview.add(new List_congno(10,"Trí tuệ nhân tạo",1335000,1335000,0));
-        listview.add(new List_congno(11,"Đồ án môn học",575000,575000,0));
-        listview.add(new List_congno(12,"Công nghệ web",1335000,0,1335000));
-
-        congno_listviewAdapter = new CongNo_listviewAdapter(listview);
+        listviewcn = new ArrayList<>();
+        getdata(urlgetdata);
+        congno_listviewAdapter = new CongNo_listviewAdapter(listviewcn);
 
         listViewCN = (ListView)findViewById(R.id.lstcongno);
         listViewCN.setAdapter(congno_listviewAdapter);
@@ -53,6 +75,48 @@ public class MainActivity_CongNo extends AppCompatActivity {
                 Toast.makeText(MainActivity_CongNo.this,congno.tenmh, Toast.LENGTH_LONG).show();
             }
         });
+    }
+    private void getdata(String url)
+    {
+        final RequestQueue requestQueue = Volley.newRequestQueue(this);
+        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
+            @Override
+            public void onResponse(JSONArray response) {
+                try
+                {
+                    Intent intent = getIntent();
+                    String mssv = intent.getStringExtra("mssv");
+                    double tongcn=0;
+                    for(int i = 0; i < response.length(); i++)
+                    {
+                        JSONObject object = response.getJSONObject(i);
+                        String obsv = object.getString("MSSV");
+                        if(obsv.equals(mssv))
+                        {
+                            int id = object.getInt("ID");
+                            String tenmh = object.getString("TENMH");
+                            double tt = object.getDouble("THANHTIEN");
+                            double dn = object.getDouble("DANOP");
+                            double cn = object.getDouble("CONGNO");
+                            listviewcn.add(new List_congno(id, tenmh, tt, dn, cn));
+                            tongcn += cn;
+                        }
+                    }
+                    String s = String.valueOf(tongcn);
+                    txtcongno.setText(s);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                congno_listviewAdapter.notifyDataSetChanged();
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(MainActivity_CongNo.this,"Lỗi!",Toast.LENGTH_SHORT).show();
+            }
+        }
+        );
+        requestQueue.add(jsonArrayRequest);
     }
     class List_congno{
         String tenmh;

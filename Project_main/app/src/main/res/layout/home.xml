@@ -3,52 +3,74 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="140dp"
         android:background="#2196F3"
         android:orientation="horizontal">
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:id="@+id/icon_ttsv"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/user" />
+            android:src="@drawable/user"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
             <TextView
                 android:id="@+id/nameuser"
-                android:text="Đỗ Hoàng Thiện"
+                android:text="thien"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
                 android:textSize="25dp"
                 android:textColor="@android:color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="MSSV:"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="16dp"
+                android:textColor="@android:color/white"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"/>
             <TextView
                 android:id="@+id/mssv"
-                android:text="MSSV: 2001160347"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="20dp"
-                android:textSize="16dp"
+                android:text="2001160174"
                 android:textColor="@android:color/white"
+                android:textSize="16dp" />
+        </LinearLayout>
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:id="@+id/malop"
-                android:text="Mã Lớp: 07DHTH1"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="20dp"
-                android:textSize="16dp"
-                android:textColor="@android:color/white"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Mã lớp: "
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16dp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/malop"
+                    android:text="07DHTH1"
+                    android:layout_marginTop="5dp"
+                    android:textSize="16dp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
@@ -123,7 +145,7 @@
                 android:background="#F7FAF7"
                 android:drawableTop="@drawable/padlock"
                 android:paddingTop="20dp"
-                android:text="Thông tin"
+                android:text="đổi mật khẩu"
                 android:textSize="12sp"></Button>
         </TableRow>
         <TableRow
@@ -131,6 +153,15 @@
             android:layout_width="match_parent"
             android:layout_height="300px">
 
+            <Button
+                android:id="@+id/btn_CN"
+                android:layout_width="360px"
+                android:layout_height="300px"
+                android:background="#F7FAF7"
+                android:drawableTop="@drawable/letter"
+                android:paddingTop="20dp"
+                android:text="công nợ"
+                android:textSize="12sp"></Button>
             <Button
                 android:id="@+id/btn_DX"
                 android:layout_width="360px"
@@ -140,17 +171,6 @@
                 android:paddingTop="20dp"
                 android:text="Đăng xuất"
                 android:textSize="12sp"></Button>
-
-            <Button
-                android:id="@+id/btn_DG"
-                android:layout_width="360px"
-                android:layout_height="300px"
-                android:background="#F7FAF7"
-                android:drawableTop="@drawable/letter"
-                android:paddingTop="20dp"
-                android:text="góp ý - phản hồi"
-                android:textSize="12sp"></Button>
-
 
         </TableRow>
     </TableLayout>

@@ -34,12 +34,12 @@
         android:layout_marginLeft="40dp">
         <EditText
             android:hint="Nhập tên người dùng"
-            android:id="@+id/edittextuser"
+            android:id="@+id/txtuser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <EditText
-            android:id="@+id/edittextpassword"
+            android:id="@+id/txtpassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"

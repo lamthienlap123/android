@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
     package="com.example.qlsv" >
-
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <dist:module dist:instant="true" />
 
     <application
@@ -19,6 +19,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity_Home"/>
+        <activity android:name=".MainActivity_TTSV"/>
+        <activity android:name=".DoiMatKhau"/>
+        <activity android:name=".MainActivity_LichHoc"/>
+        <activity android:name=".MainActivity_CongNo"/>
     </application>
 
 </manifest>

@@ -12,7 +12,7 @@
         android:orientation="horizontal">
         <ImageButton
             android:background="@null"
-            android:id="@+id/imageButton"
+            android:id="@+id/btn_Home"
             android:layout_width="50dp"
             android:layout_height="match_parent"
             app:srcCompat="?attr/actionModeCloseDrawable" />
@@ -32,18 +32,17 @@
         android:background="@drawable/backgrond_ttsv"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:id="@+id/icon_ttsv"
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/img_ttsv"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:scaleType="centerCrop"
+            android:layout_marginTop="13dp"
             android:src="@drawable/user" />
         <TextView
             android:id="@+id/nameuser"
             android:text="Đỗ Hoàng Thiện"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:gravity="center"
             android:textSize="25dp"
             android:textColor="@android:color/white"

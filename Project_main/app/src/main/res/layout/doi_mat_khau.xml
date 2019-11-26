@@ -4,6 +4,7 @@
     android:layout_height="match_parent" android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
     tools:context=".DoiMatKhau">
 
     <LinearLayout
@@ -40,7 +41,6 @@
         android:layout_gravity="center"
         android:layout_marginTop="100dp">
         <TextView
-            android:id="@+id/textView1"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:textSize="30sp"
@@ -51,12 +51,9 @@
             android:id="@+id/editText1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:text="            " />
+            android:ems="10" />
 
         <TextView
-            android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:textSize="30sp"
@@ -64,14 +61,11 @@
             android:textStyle="bold|italic"/>
 
         <EditText
-            android:id="@+id/editTex2t"
+            android:id="@+id/editText2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:text="            " />
+            android:ems="10" />
         <TextView
-            android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:textSize="30sp"
@@ -82,9 +76,7 @@
             android:id="@+id/editText3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:text="            " />
+            android:ems="10" />
 
 
     </LinearLayout>
@@ -92,11 +84,11 @@
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:orientation="horizontal"
-        android:id="@+id/btn_login"
+        android:id="@+id/btn_capnhat"
         android:text="XÁC NHẬN"
         android:layout_height="wrap_content"
         android:layout_width="220dp"
-        android:backgroundTint="#0000FF"
+        android:backgroundTint="@color/colorAccent"
         style="@style/Widget.AppCompat.Button.Colored"
         />
 
